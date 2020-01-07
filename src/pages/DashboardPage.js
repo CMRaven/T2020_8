@@ -65,9 +65,9 @@ class DashboardPage extends React.Component {
         <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Total Profit"
+              title="Total Spending limit"
               subtitle="This month"
-              number="9.8k"
+              number="$9,800"
               color="secondary"
               progress={{
                 value: 75,
@@ -78,22 +78,9 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Monthly Visitors"
+              title="Total Debit"
               subtitle="This month"
-              number="5,400"
-              color="secondary"
-              progress={{
-                value: 45,
-                label: 'Last month',
-              }}
-            />
-          </Col>
-
-          <Col lg={3} md={6} sm={6} xs={12}>
-            <NumberWidget
-              title="New Users"
-              subtitle="This month"
-              number="3,400"
+              number="$1,800.2"
               color="secondary"
               progress={{
                 value: 90,
@@ -104,12 +91,25 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Bounce Rate"
+              title="Total Credit"
               subtitle="This month"
-              number="38%"
+              number="$2,000.3"
               color="secondary"
               progress={{
-                value: 60,
+                value: 100,
+                label: 'Last month',
+              }}
+            />
+          </Col>
+
+          <Col lg={3} md={6} sm={6} xs={12}>
+            <NumberWidget
+              title="Balance"
+              subtitle="This month"
+              number="$10,000"
+              color="secondary"
+              progress={{
+                value: 20,
                 label: 'Last month',
               }}
             />
@@ -117,7 +117,7 @@ class DashboardPage extends React.Component {
         </Row>
 
         <Row>
-          <Col lg="8" md="12" sm="12" xs="12">
+          <Col lg="6" md="8" sm="8" xs="8">
             <Card>
               <CardHeader>
                 Spending History{' '}
@@ -132,7 +132,7 @@ class DashboardPage extends React.Component {
             </Card>
           </Col>
 
-          <Col lg="4" md="12" sm="12" xs="12">
+          <Col lg="6" md="8" sm="8" xs="8">
             <Card>
               <CardHeader>Expense Ranking</CardHeader>
               <CardBody>
