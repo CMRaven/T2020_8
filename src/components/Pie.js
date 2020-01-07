@@ -68,7 +68,7 @@ class Pie extends Component {
     render() {
       return (
       <div className="Pie">
-            <div id="Pie" style={{width: "500px", height: "500px"}}></div>
+            <div id="Pie" style={{width: "450px", height: "400px"}}></div>
       </div>
       );
     };
